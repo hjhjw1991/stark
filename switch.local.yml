@@ -1,0 +1,33 @@
+# Version:1.0
+#
+# 中文文档
+# https://bytedance.feishu.cn/docs/doccnlAmSFCT0AVGCJyj7yhJjca
+#
+# 文件由插件自动生成, 包含所有支持二进制与源码切换的组件开关 与 组合开关
+# 建议使用配套的As插件进行切换操作 https://bytedance.feishu.cn/docs/doccn6NGRpTWzDX3whs3ldAbRhe
+#
+# dependencyStatus 字段控制该组件依赖状态
+#   - UN_SET_USE_DEFAULT -> 由插件计算, 使用默认值
+#   - NO_INCLUDE_SOURCE -> 由用户指定为禁止引入源码
+#   - INCLUDE_SOURCE -> 由用户指定为引入源码
+# lastResolveDependencyStatusDescriptor 字段展示最终组件依赖的状态结果以及原因
+#
+# 开关优先级
+# 本地特殊配置开关 > 当前开关声明dependencyStatus > 组合开关声明dependencyStatus > 默认开关
+#
+#
+# English Document
+# https://bytedance.feishu.cn/docs/doccnlAmSFCT0AVGCJyj7yhJjca
+#
+cb_x_element:
+  dependencyStatus: UN_SET_USE_DEFAULT # UN_SET_USE_DEFAULT, NO_INCLUDE_SOURCE, INCLUDE_SOURCE
+  lastResolveDependencyStatusDescriptor: default `NO_INCLUDE_SOURCE`. resolve `NO_INCLUDE_SOURCE`, because default switch was set to `NO_INCLUDE_SOURCE`
+  subSwitches:
+  - x_element
+
+x_element:
+  scheme: git@code.byted.org:ugc/x-element.git#7c866d930ef7cce274da6eee8aeec47f42c8e5d2#:x-element
+  coordinate: com.bytedance.lynx:x-element:1.0.2-rc.2
+  dependencyStatus: UN_SET_USE_DEFAULT # UN_SET_USE_DEFAULT, NO_INCLUDE_SOURCE, INCLUDE_SOURCE
+  lastResolveDependencyStatusDescriptor: default `NO_INCLUDE_SOURCE`. resolve `NO_INCLUDE_SOURCE`, because default switch was set to `NO_INCLUDE_SOURCE`
+

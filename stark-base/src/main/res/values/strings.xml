@@ -1,0 +1,13 @@
+<resources>
+    <string name="stark_app_name">x-debugger</string>
+    <string name="stark_module_name">Stark Plugin</string>
+    <public name="stark_core" type="string">Stark Core</public>
+    <string name="stark_plugin_load_failure">Failed to load plugins.\\n%s</string>
+    <string name="stark_notification_content_title">Stark</string>
+    <string name="stark_notification_content_text"></string>
+    <string name="stark_notification_subtext">Tap to open the menu.</string>
+    <string name="stark_notification_action_open_drawer">Open Menu</string>
+    <string name="stark_notification_channel_name">Stark Foreground Notification</string>
+    <string name="stark_notification_channel_description">Channel used for displaying the Stark foreground notification.</string>
+    <string name="stark_version_text">Stark v%s</string>
+</resources>

@@ -1,0 +1,24 @@
+
+
+def loadSysProperties(sourceFileName) {
+    try {
+        def propFile = new File(sourceFileName)
+        if (!propFile.canRead()) return
+        def loadFlag = "load_${propFile}_system_properties"
+        if (System.properties[loadFlag] != null && System.properties[loadFlag] == "true") return
+
+        Properties properties = new Properties()
+        properties.load(new FileInputStream(propFile))
+        for (Map.Entry property in properties) {
+            System.properties[property.key] = property.value
+            println "load system property: ${property.key} -> ${System.properties[property.key]} from ${propFile}"
+        }
+        System.properties[loadFlag] = "true"
+    } catch (e) {
+    }
+}
+
+// 只对外导出函数，不执行，否则会执行多次
+ext {
+    loadSysProperties = this.&loadSysProperties
+}

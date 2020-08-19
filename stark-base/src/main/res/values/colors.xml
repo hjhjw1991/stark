@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="stark_light_gray">#FAFAFA</color>
+    <color name="stark_text_gray">#B4B4B4</color>
+    <color name="stark_text">#223547</color>
+<!--    <color name="stark_menu_background_debug">#FF0000</color>-->
+    <color name="stark_menu_background">#F4F5F7</color>
+    <color name="stark_inspect_background">#737373</color>
+    <color name="stark_divider">#E6E6E6</color>
+    <color name="stark_white">#FFFFFF</color>
+    <color name="stark_blue">#2b57f4</color>
+    <color name="stark_plugin_text">#8E8E93</color>
+    <color name="stark_enabled">#2F5DF0</color>
+    <color name="stark_disabled">#E6E6E6</color>
+    <color name="stark_menu_background_dark">#6495ED</color>
+</resources>

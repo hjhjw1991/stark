@@ -1,0 +1,10 @@
+include ':stark-plugin-external'
+
+include ':stark-base'
+include ':stark-base-no-op'
+apply from: file('function.gradle')
+
+include ':app'
+rootProject.name='Stark'
+
+loadSysProperties("./local.properties")

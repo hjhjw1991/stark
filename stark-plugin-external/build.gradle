@@ -1,0 +1,28 @@
+apply from: project.file("../kotlin_lib_common.gradle")
+// for processing auto-service
+apply plugin: 'kotlin-kapt'
+
+android {
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    resourcePrefix 'stark_plugin_'
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$support_version"
+
+    // scalpel depends
+    compileOnly "com.jakewharton.scalpel:scalpel:$scalpel_version"
+    api project(':stark-base')
+
+    kapt "com.google.auto.service:auto-service:$autoservice_version"
+}

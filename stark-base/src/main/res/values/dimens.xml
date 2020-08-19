@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="stark_plugin_icon_size">40dp</dimen>
+    <dimen name="stark_plugin_text_size">8sp</dimen>
+    <dimen name="stark_plugin_item_width">56dp</dimen>
+    <dimen name="stark_plugin_item_height">80dp</dimen>
+    <dimen name="stark_plugin_dock_height">100dp</dimen>
+    <dimen name="stark_plugin_dock_width">240dp</dimen>
+    <dimen name="stark_plugin_padding">5dp</dimen>
+    <dimen name="stark_plugin_big_padding">40dp</dimen>
+</resources>

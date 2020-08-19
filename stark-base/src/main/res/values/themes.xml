@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Stark.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/stark_inspect_background</item>
+        <item name="colorAccent">@color/stark_text_gray</item>
+        <item name="android:textColorPrimary">@color/stark_text</item>
+        <item name="android:textColorSecondary">@color/stark_text_gray</item>
+        <item name="android:listDivider">@drawable/stark_horizontal_divider</item>
+    </style>
+
+    <style name="Stark.Base.Drawer">
+        <item name="android:windowBackground">@color/stark_menu_background_dark</item>
+        <item name="android:textColorPrimary">@color/stark_text</item>
+    </style>
+
+    <style name="Stark.Base.Inspect">
+        <item name="android:windowBackground">@color/stark_inspect_background</item>
+    </style>
+
+</resources>

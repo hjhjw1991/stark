@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hjhjw1991.stark.stark">
+
+    <!--Required for API 28 and above-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application>
+        <provider
+            android:authorities="${applicationId}.SilverInitProvider"
+            android:name="com.hjhjw1991.stark.framework.StarkInitProvider"
+            android:exported="false" />
+        <service
+            android:name="com.hjhjw1991.stark.framework.StarkService"
+            android:exported="false"/>
+    </application>
+</manifest>

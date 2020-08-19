@@ -1,0 +1,18 @@
+project.ext {
+    kotlin_version = '1.3.71'
+    kotlinx_coroutines_version = '1.1.1'
+    compile_sdk_version = 28
+    target_sdk_version = 28
+    min_sdk_version = 16
+    junit_version = '4.12'
+    test_runner_version = '1.0.2'
+    test_espresso_core_version = '3.0.2'
+    support_version = '28.0.0'
+
+    dagger_version = '2.19'
+    autoservice_version = '1.0-rc4'
+    stark_publish = has('stark_publish') ? get('stark_publish') : false
+    stark_base_version = "0.0.2-alpha.1"
+
+    scalpel_version = "1.1.2"
+}

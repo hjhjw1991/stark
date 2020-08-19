@@ -1,0 +1,24 @@
+apply from: project.file("../kotlin_lib_common.gradle")
+apply plugin: 'kotlin-kapt'
+android {
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    resourcePrefix 'stark_'
+}
+
+dependencies {
+    implementation "com.android.support:appcompat-v7:$support_version"
+
+    // for dagger di
+    // NOTE: version of dagger should be identical with that in your client project(e.g. Krypton)
+    compileOnly "com.google.dagger:dagger:$dagger_version"
+    // for dagger annotation
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+}
